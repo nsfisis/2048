@@ -15,4 +15,7 @@ $(PROGRAM): 2048$(SUFFIX).c
 $(DIST):
 	@mkdir $@
 
-.PHONY: all run build
+clean:
+	@rm -rf $(DIST)
+
+.PHONY: all run build clean

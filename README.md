@@ -2,6 +2,14 @@
 
 CLI 2048 written in 2 KiB.
 
+```
+$ wc *.c
+     202     516    4930 2048.c
+      33     170    2048 2048_minified.c
+     201     514    3513 2048_renamed.c
+     436    1200   10491 total
+```
+
 
 ## Compile
 

@@ -1,6 +1,6 @@
 DIST := bin
 SUFFIX := _minified
-PROGRAM := $(DIST)/2048$(SUFFIX)
+PROGRAM := $(DIST)/2048
 
 all: run
 

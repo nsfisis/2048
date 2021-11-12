@@ -1,4 +1,5 @@
-SUFFIX ?= _minified
+# Uncomment this line if you want to compile 2048_clean.c
+# SUFFIX ?= _clean
 
 DIST := bin
 PROGRAM := $(DIST)/2048

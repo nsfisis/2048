@@ -3,11 +3,10 @@
 CLI 2048 written in 2 KiB.
 
 ```
-$ wc *.c
-     202     516    4930 2048.c
-      33     170    2048 2048_minified.c
-     201     514    3513 2048_renamed.c
-     436    1200   10491 total
+$ wc -c *.c
+    2048 2048.c
+    4930 2048_clean.c
+    6978 total
 ```
 
 
@@ -17,7 +16,7 @@ $ wc *.c
 $ make build
 ```
 
-By default, `2048_minified.c` is compiled. If you want to use another source file, set `SUFFIX` like this: `SUFFIX= make build` (it compiles `2048.c`)
+By default, `2048.c` is compiled. If you want to compile another source file, set `SUFFIX` like this: `SUFFIX=_clean make build` (it compiles `2048_clean.c`)
 
 
 ## Play
@@ -38,8 +37,6 @@ $ ./bin/2048 8x8    # large 2048
 ## Source Files
 
 * `2048.c`
-  * Human-friendly version.
-* `2048_renamed.c`
-  * All variables, functions and macros are renamed. It can be read to some extent.
-* `2048_minified.c`
   * Minified version. Its file size is 2 KiB.
+* `2048_clean.c`
+  * Human-friendly version.

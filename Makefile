@@ -4,15 +4,10 @@
 DIST := bin
 PROGRAM := $(DIST)/2048
 
-all: run
-
-run: build
-	./$(PROGRAM)
-
-build: $(DIST) $(PROGRAM)
+all: $(DIST) $(PROGRAM)
 
 $(PROGRAM): 2048$(SUFFIX).c
-	gcc $^ -lncurses -o $@
+	gcc $^ -o $@
 
 $(DIST):
 	@mkdir $@
@@ -20,4 +15,4 @@ $(DIST):
 clean:
 	@rm -rf $(DIST)
 
-.PHONY: all run build clean
+.PHONY: all clean

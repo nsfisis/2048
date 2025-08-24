@@ -1,22 +1,24 @@
 # 2048
 
-CLI 2048 written in 2 KiB.
+CLI 2048 written in 2 kb.
 
 ```
-$ wc -c *.c
-    2048 2048.c
-    4930 2048_clean.c
-    6978 total
+$ wc -c **/*.c
+ 2048 2048.c
+ 5574 2048_clean.c
+ 2048 orig/2048.c
+ 4930 orig/2048_clean.c
+14600 total
 ```
 
 
 ## Compile
 
 ```
-$ make build
+$ make
 ```
 
-By default, `2048.c` is compiled. If you want to compile another source file, set `SUFFIX` like this: `SUFFIX=_clean make build` (it compiles `2048_clean.c`)
+By default, `2048.c` is compiled. If you want to compile another source file, set `SUFFIX` like this: `SUFFIX=_clean make` (it compiles `2048_clean.c`)
 
 
 ## Play
@@ -40,3 +42,5 @@ $ ./bin/2048 8x8    # large 2048
   * Minified version. Its file size is 2 KiB.
 * `2048_clean.c`
   * Human-friendly version.
+* `orig/2024.c` and `orig/2024_clean.c`
+  * Original version. They depends on `ncurses` library.
